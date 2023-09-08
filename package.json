@@ -1,0 +1,34 @@
+{
+  "name": "stripe-checkout-server",
+  "version": "1.0.0",
+  "description": "The server part of implementing Stripe Checkout",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanbry/stripe-checkout-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johanbry/stripe-checkout-server/issues"
+  },
+  "homepage": "https://github.com/johanbry/stripe-checkout-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.17",
+    "nodemon": "^3.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
