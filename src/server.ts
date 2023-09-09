@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import cookieSession from "cookie-session";
 
 import userRouter from "./routes/userRouter";
 
@@ -13,6 +14,16 @@ app.use(
   cors({
     origin: true,
     credentials: true,
+  })
+);
+
+app.use(
+  cookieSession({
+    name: "session",
+    secret: process.env.COOKIE_SECRET,
+    maxAge: 1000 * 60 * 60 * 24,
+    sameSite: "strict",
+    httpOnly: true,
   })
 );
 
