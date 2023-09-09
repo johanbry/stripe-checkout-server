@@ -1,12 +1,13 @@
 import { Request, Response } from "express";
 import initStripe from "../stripe/stripe";
 
-export const getAllProducts = async (req: Request, res: Response) => {
+export const getProducts = async (req: Request, res: Response) => {
   try {
-    // Get products from Stripe, limit to 10 and expand the default_price property.
+    // Get products from Stripe, limit to specified number (or 10) and expand the default_price property.
     const stripe = initStripe();
+    const limit: number = Number(req.query.limit) || 10;
     const products = await stripe?.products.list({
-      limit: 10,
+      limit,
       expand: ["data.default_price"],
     });
     if (!products) return res.status(204).end();
