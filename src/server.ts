@@ -4,6 +4,7 @@ import cors from "cors";
 import cookieSession from "cookie-session";
 
 import userRouter from "./routes/userRouter";
+import productRouter from "./routes/productRouter";
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ app.use(
 
 app.use(express.json());
 
+app.use("/api/products", productRouter);
 app.use("/api/users", userRouter);
 
 app.listen(port, () => {
