@@ -11,7 +11,7 @@ export const getProducts = async (req: Request, res: Response) => {
       expand: ["data.default_price"],
     });
     if (!products) return res.status(204).end();
-    res.status(200).json(products);
+    res.status(200).json(products.data);
   } catch (error) {
     res.status(500).json("Error when retrieving products. " + error);
   }
