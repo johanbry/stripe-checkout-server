@@ -1,0 +1,24 @@
+[
+  {
+    "id": "2d5c8848-ec33-47df-a0cc-beddacdbfe03",
+    "created": 1695226235,
+    "paymentId": "cs_test_b1a3nA4FBmZ7eJ51qeiQvMrYtmJkW8Xpb63bkl6EPJy71SlIhcRoXPaNIp",
+    "totalAmount": 139900,
+    "customer": {
+      "stripeId": "cus_OfoVdewNcDmpQQ",
+      "name": "Johan Brynielsson",
+      "email": "johan@johan.se"
+    },
+    "orderItems": [
+      {
+        "id": "prod_ObgrcRdoRtpyiF",
+        "name": "Umbro Neo Professional",
+        "image": "https://files.stripe.com/links/MDB8YWNjdF8xTm9MdllBUHd3eGo3MHhDfGZsX3Rlc3RfejVUQUttaExpWWlUZjUxMzRCazY0N2o200MdRGdgPd",
+        "price": 139900,
+        "quantity": 1,
+        "discount": 0,
+        "totalPrice": 139900
+      }
+    ]
+  }
+]
