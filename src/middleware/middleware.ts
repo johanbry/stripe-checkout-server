@@ -11,7 +11,7 @@ export const validate = (schema: Joi.Schema) => {
 };
 
 export const auth = (req: Request, res: Response, next: NextFunction) => {
-  if (req.session?.id) return next();
+  if (req.session?.stripeId) return next();
 
   res.status(401).json("Not logged in.");
 };
