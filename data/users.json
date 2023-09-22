@@ -4,5 +4,11 @@
     "name": "Sture Nilsson",
     "email": "sture@sture.se",
     "password": "$2b$10$XG74cOi1FQZ8bqrcBR7PNumd0G.wXluDG7v3QLTR1jFhhPmA39fki"
+  },
+  {
+    "stripeId": "cus_OgTigUUx1zvO0q",
+    "name": "Hugo Jansson",
+    "email": "hugo@hugo.se",
+    "password": "$2b$10$FnWzsuCYJw556ueqooMc.eq3015ZxVhi4Ldti6clq6wP5n7j1Jtpq"
   }
 ]
