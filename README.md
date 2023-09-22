@@ -29,11 +29,12 @@ Kör följande kommandon för att starta projektet i dev mode.
 
 `npm run dev`
 
-## Använda tekniker/språk/ramverk etc.
+## Använda tekniker/språk/ramverk/paket etc.
 
 - Node
 - Express
 - Typescript
+- Joi
 - Stripe API
 
 ## Reflektioner/förbättringar
